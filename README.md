@@ -1,4 +1,4 @@
-```markdown
+
 # MedFiTRG
 
 A modular framework for clinical outcome prediction using multimodal deep learning with EHR, CXR, and clinical text data. Features TripleFiLM Network with 3-level fusion for superior performance across four clinical tasks (IHM, LOS, PHE, REA).
@@ -70,5 +70,4 @@ cd REA      # Readmission
 python run_ihm.py --mode both --gpu 0 --batch_size 32 --epochs 50
 
 # Or use the provided shell script in the same task directory
-```
 ```
