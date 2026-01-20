@@ -1,6 +1,7 @@
+```markdown
 # MedFiTRG
 
-A modular framework for clinical outcome prediction using multimodal deep learning with EHR, CXR, and clinical text data. Features TripleFiLM Network with 3-level fusion for superior performance across four clinical tasks(IHM, LOS, PHE, REA).
+A modular framework for clinical outcome prediction using multimodal deep learning with EHR, CXR, and clinical text data. Features TripleFiLM Network with 3-level fusion for superior performance across four clinical tasks (IHM, LOS, PHE, REA).
 
 ## 📋 Overview
 
@@ -29,9 +30,9 @@ pip install torch torchvision
 pip install transformers torchxrayvision
 pip install pandas numpy scikit-learn matplotlib seaborn
 pip install pillow pydicom
+```
 
-
-## Configure Paths
+### 2. Configure Paths
 
 Before running any experiments, configure your data and output paths. Each task directory contains its own `config.py` file that you need to edit:
 
@@ -47,10 +48,11 @@ EHR_BASE_DIR = "/path/to/your/mimic-iv/data"       # EHR data (CSV files from MI
 CXR_BASE_DIR = "/path/to/your/mimic-cxr/images"    # CXR images (PNG/DICOM format)
 TEXT_BASE_DIR = "/path/to/your/clinical/notes"     # Clinical text files
 OUTPUT_DIR = "/path/to/save/results"               # Where to save models and outputs
+```
 
-## Run Any Task
+### 3. Run Any Task
 
-### Quick Start Commands
+#### Quick Start Commands
 
 Get started with any clinical prediction task using these simple commands:
 
@@ -67,5 +69,5 @@ cd REA      # Readmission
 # Run training and testing in one command
 python run_ihm.py --mode both --gpu 0 --batch_size 32 --epochs 50
 
-# Or use the provided shell script in the same task directory.
-
+# Or use the provided shell script in the same task directory
+```
