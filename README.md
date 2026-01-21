@@ -1,16 +1,26 @@
+# **MedFiTRG**
 
-# MedFiTRG
+**MedFiTRG** is a modular multimodal deep learning framework for **clinical outcome prediction** that integrates **Electronic Health Records (EHR)**, **Chest X-Ray (CXR) images**, and **clinical text**.  
+It employs a **Modulated Graph Neural Network (MGNN)** with **three-level multimodal fusion** to achieve strong performance across four clinical tasks: **In-Hospital Mortality (IHM)**, **Length of Stay (LOS)**, **Phenotyping (PHE)**, and **Readmission (REA)**.
 
-A modular framework for clinical outcome prediction using multimodal deep learning with EHR, CXR, and clinical text data. Features TripleFiLM Network with 3-level fusion for superior performance across four clinical tasks (IHM, LOS, PHE, REA).
+---
 
 ## 📋 Overview
 
-This repository implements a comprehensive multimodal deep learning framework for clinical outcome prediction, combining:
-- **Electronic Health Records (EHR)** - Structured patient data
-- **Chest X-Ray (CXR) Images** - Visual medical imaging data  
-- **Clinical Text** - Unstructured medical notes and reports
+This repository presents a unified and extensible framework for multimodal clinical reasoning by jointly modeling heterogeneous healthcare data:
 
-The core architecture features a **TripleFiLM Network** with 3-level feature fusion for optimal multimodal integration.
+- **Electronic Health Records (EHR):**  
+  Structured temporal patient information, including vitals and laboratory measurements.
+
+- **Chest X-Ray (CXR) Images:**  
+  High-dimensional visual representations extracted from medical imaging.
+
+- **Clinical Text:**  
+  Unstructured information derived from clinical notes and diagnostic reports.
+
+MedFiTRG adopts a **temporal–social graph-based modeling paradigm**, where **patient visits form temporal nodes** connected through both **longitudinal edges** and **social similarity edges**. These interactions are dynamically refined using a **Modulated Graph Neural Network (MGNN)**, enabling effective cross-modal fusion and improved modeling of longitudinal and population-level clinical dependencies.
+
+
 
 ## 🚀 Quick Start
 
