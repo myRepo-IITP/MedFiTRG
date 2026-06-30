@@ -37,7 +37,7 @@
     "Weight": false,
     "pH": false
   },
-  "truncate_seq_len": 60,
+  "truncate_seq_len": 350,
   "possible_values": {
     "Capillary refill rate": [
       "0.0",
